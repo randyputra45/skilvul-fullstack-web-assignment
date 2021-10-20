@@ -1,0 +1,21 @@
+{
+  "name": "tailwindcss",
+  "version": "1.0.0",
+  "description": "tutorial tailwind",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite"
+  },
+  "author": "Randy Christian",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.3.7",
+    "postcss": "^8.3.9",
+    "tailwindcss": "^2.2.16",
+    "vite": "^2.6.7"
+  },
+  "tailwindCSS.includeLanguages": {
+    "javascript": "javascript",
+    "html": "HTML"
+  }
+}
