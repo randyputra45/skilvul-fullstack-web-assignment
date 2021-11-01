@@ -8,7 +8,7 @@ export const StyledButton = styled.button`
     border: solid 1px ${(props) => props.outline ? "lightblue" : "white"};
     background-color: ${(props) => props.outline ? "white" : "lightblue"};
     color: ${(props) => props.outline ? "lightblue" : "white"};
-    width: ${(props) => props.fullWidth !== null ? "100%" : "auto"};
+    width: ${(props) => props.fullWidth ? "10px" : "100%"};
     &:hover {
         border: solid 1px ${(props) => props.outline ? "lightblue" : "cornflowerblue"};
         background-color: ${(props) => props.outline ? "lightblue" : "cornflowerblue"};
