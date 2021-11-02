@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useHistory } from "react-router";
 import * as qs from 'query-string';
 
 const MovieListFilter = () => {
@@ -10,9 +11,15 @@ const MovieListFilter = () => {
   const categories = ["TV", "Movie"];
   const fields = ["title", "score"];
 
-  const [show, setShow] = useState(shows[0]);
-  const [category, setCategory] = useState(categories[0]);
-  const [sortBy, setSortBy] = useState(fields[0]);
+  const [show, setShow] = useState(params.show || shows[0]);
+  const [category, setCategory] = useState(params.category || categories[0]);
+  const [sortBy, setSortBy] = useState(params.sort || fields[0]);
+
+  let history = useHistory(); 
+  const handleClick = () => {
+    history.push(`/movies/?show=${show}&category=${category}&sort=${sortBy}`);
+  };
+
   return (
     <div className="col-12 my-5">
       <div className="row align-items-stretch justify-content-center">
@@ -71,7 +78,7 @@ const MovieListFilter = () => {
           </select>
         </div>
         <div className="col-2 row align-items-end">
-          <button id="submit" className="btn btn-outline-success">
+          <button id="submit" className="btn btn-outline-success" onClick={handleClick}>
             submit
           </button>
         </div>

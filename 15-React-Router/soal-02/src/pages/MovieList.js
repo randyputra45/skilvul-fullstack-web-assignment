@@ -1,5 +1,6 @@
 import MovieCard from "../components/MovieCard";
 import MovieListFilter from "../components/MovieListFilter";
+import * as qs from 'query-string';
 
 import movies from "../dummy-data";
 
@@ -9,17 +10,22 @@ const MovieList = () => {
   const fields = ["title", "score"];
 
   // Variable yang akan menampung parameter yang telah diberikan oleh user
-  const params = {};
+  const params = qs.parse(location.search);
+  console.log(params);
 
   // Variable yang kita gunakan untuk melakukan penyaringan data
   const filter = {
-    show: shows[0],
-    category: categories[0],
-    sort: fields[0]
+    show: params.show || shows[0],
+    category: params.category || categories[0],
+    sort: params.sort || fields[0],
   };
 
   // Variable yang akan menyimpan data-data yang sudah difilter menggunakan variable filter diatas
-  const filteredMovies = movies;
+  const filteredMovies = movies.
+    filter((movie) => movie.type === filter.category).
+    //sort score descending & sort title ascending
+    sort((a, b) => filter.sort === 'score' ? b.score - a.score : a.title.localeCompare(b.title)). 
+    slice(0, filter.show); 
 
   return (
     <div className="row">
