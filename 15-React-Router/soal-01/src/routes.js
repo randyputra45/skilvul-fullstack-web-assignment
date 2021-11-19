@@ -4,8 +4,8 @@ import MovieList from './pages/MovieList';
 
 const routes = [
   {
-    name: 'home',
-    path: '/',
+    name: "home",
+    path: "/",
     component: Home,
   },
 
