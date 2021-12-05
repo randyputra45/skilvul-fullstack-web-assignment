@@ -1,6 +1,6 @@
 ### Soal
 
-1. Mohon jelaskan apa itu Node.js? Apa perbedaamnya dengan JavaScript?
+1. Mohon jelaskan apa itu Node.js? Apa perbedaannya dengan JavaScript?
 2. Mohon jelaskan arsitektur dari Node.js?
 3. Apa perbedaan antara Built-in Module, External Module, dan Custom Module pada Node.js?
 4. Sebutkan salah satu contoh dari Built-in Module, External Module, dan Custom Module pada Node.js?
