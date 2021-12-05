@@ -12,8 +12,8 @@
 3. Built-in Module, External Module, dan Custom Module\
    a) Built-in Module: merupakan module yang sudah terinstal ketika kita menginstal Node.JS dan akan ter-load secara otomatis ketika Node.JS dijalankan.\
    b) External Module: merupakan module yang dibuat oleh komunitas Node.JS untuk membantu memecahkan permasalahan yang tidak bisa ditangani oleh built-in module. Biasanya module ini dipublish pada Node Package Manager (NPM).\
-   c) Custom Module: merupakan module yang dibuat sendiri oleh programmer dan tidak terdapat pada Built-in dan External Module.\
+   c) Custom Module: merupakan module yang dibuat sendiri oleh programmer dan tidak terdapat pada Built-in dan External Module.
 4. Contoh Built-in Module, External Module, dan Custom Module\
    a) Built-in Module: http, url, querystring, path, fs, crypto, net, dns, os module.\
    b) External Module: bower, csv, debug, gulp, lodash, moongoose, mongodb module.\
-   c) Custom Module: custom module arithmetic.js untuk melakukan operasi penjumlahan untuk menggunakannya kita tinggal melakukan import arithmetic.js.\
+   c) Custom Module: custom module arithmetic.js untuk melakukan operasi penjumlahan untuk menggunakannya kita tinggal melakukan import arithmetic.js.
