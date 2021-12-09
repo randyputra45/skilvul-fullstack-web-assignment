@@ -1,0 +1,8 @@
+Link Heroku:
+https://intense-river-61673.herokuapp.com
+
+Link Endpoint:
+- Home: https://intense-river-61673.herokuapp.com
+- Products: https://intense-river-61673.herokuapp.com/tea
+- Other Products: https://intense-river-61673.herokuapp.com/other
+- Ping: https://intense-river-61673.herokuapp.com/ping
